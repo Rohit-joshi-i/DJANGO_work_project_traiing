@@ -9,8 +9,7 @@ class UserProfileInfo(models.Model):
 
     # Add any additional attributes you want
     portfolio_site = models.URLField(blank=True)
-    # pip install pillow to use this!
-    # Optional: pip install pillow --global-option=”build_ext” --global-option=”--disable-jpeg”
+
     profile_pic = models.ImageField(upload_to='profile_pics',blank=True)
 
     def __str__(self):
